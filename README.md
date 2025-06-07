@@ -15,7 +15,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flexi_border: ^0.0.4
+  flexi_border: ^0.0.5
 ```
 
 Then:
@@ -40,87 +40,136 @@ import 'package:flexi_border/flexi_border.dart';
 
 ```dart
 FlexiBorder(
-  borderColor: Colors.white,
-  strokeWidth: 10,                // thick line
-  dashPattern: [],                // empty => solid
-  drawTop: true,
-  drawRight: true,
-  drawBottom: true,
-  drawLeft: true,
-  borderMode: BorderMode.full,
-  child: Container(
-    width: 300,
-    height: 90,
-    color: Colors.black,
-    alignment: Alignment.center,
-    child: Row(
-      children: [
-        Text(
-          "👋 I'm Shanu",
-          style: TextStyle(color: Colors.white, fontSize: 20),
-        ),
-      ],
-    ),
-  ),
-)
+                borderMode: BorderMode.full,
+                topStartOffset:4.8,
+                topEndOffset: -300/2,
+                leftStartOffset:4.8,
+                rightStartOffset: 4.8,
+                bottomStartOffset: 4.8,
+                bottomEndOffset: -300/2,
+                strokeWidth: 1,
+                dashPattern: [10,10],
+                borderColor: Colors.white,
+
+                child: Container(
+                    width:300,
+                    height:90,
+                    decoration: BoxDecoration(
+                      color:Colors.black,
+                    ),
+                    child:Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/hi.gif',
+                          width: 70,
+                          height:70,
+                        ),
+                        SizedBox(
+                          width: 10,
+                          height: 90
+                        ),
+                        Text("I'm Shanu",
+                          style: TextStyle(
+                            fontSize: 40,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                      ),
 ```
 
 #### 2️⃣ Evenly Dashed Border
 
 ```dart
 FlexiBorder(
-  borderColor: Colors.cyanAccent,
-  strokeWidth: 2,
-  dashPattern: [10, 10],          // 10px dash / 10px gap
-  drawTop: true,
-  drawRight: true,
-  drawBottom: true,
-  drawLeft: true,
-  borderMode: BorderMode.full,
-  child: Container(
-    width: 300,
-    height: 90,
-    color: Colors.black,
-    alignment: Alignment.center,
-    child: Row(
-      children: [
-        Text(
-          "👋 I'm Shanu",
-          style: TextStyle(color: Colors.white, fontSize: 20),
-        ),
-      ],
-    ),
-  ),
-)
+                borderMode: BorderMode.full,
+                topStartOffset:4.8,
+                topEndOffset: -300/2,
+                leftStartOffset:4.8,
+                rightStartOffset: 4.8,
+                bottomStartOffset: 4.8,
+                bottomEndOffset: -300/2,
+                strokeWidth: 10,
+                dashPattern: [6,1],
+                borderColor: Colors.white,
+
+                child: Container(
+                    width:300,
+                    height:90,
+                    decoration: BoxDecoration(
+                      color:Colors.black,
+                    ),
+                    child:Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/hi.gif',
+                          width: 70,
+                          height:70,
+                        ),
+                        SizedBox(
+                          width: 10,
+                          height: 90
+                        ),
+                        Text("I'm Shanu",
+                          style: TextStyle(
+                            fontSize: 40,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                      ),
 ```
 
 #### 3️⃣ Half Rectangle Side
 
 ```dart
 FlexiBorder(
-  borderColor: Colors.orangeAccent,
-  strokeWidth: 2,
-  dashPattern: [5, 2],            // 5px dash / 2px gap
-  drawTop: true,
-  drawRight: false,               // skip the right edge
-  drawBottom: true,
-  drawLeft: true,
-  borderMode: BorderMode.half + 20,
-  child: Container(
-    width: 300,
-    height: 90,
-    padding: EdgeInsets.symmetric(horizontal: 16),
-    color: Colors.black,
-    child: Row(
-      children: [
-        Text(
-          "👋 I'm Shanu",
-          style: TextStyle(color: Colors.white, fontSize: 20),
-        ),
-      ],
-    ),
-  ),
-)
+                borderMode: BorderMode.full,
+                drawRight: false,
+                topStartOffset:4.8,
+                topEndOffset: -300/2,
+                leftStartOffset:4.8,
+                rightStartOffset: 4.8,
+                bottomEndOffset: 4.8,
+                bottomStartOffset: -300/2,
+                strokeWidth: 2,
+                dashPattern: [5,5],
+                borderColor: Colors.white,
+
+                child: Container(
+                    width:300,
+                    height:90,
+                    decoration: BoxDecoration(
+                      color:Colors.black,
+                    ),
+                    child:Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/hi.gif',
+                          width: 70,
+                          height:70,
+                        ),
+                        SizedBox(
+                          width: 10,
+                          height: 90
+                        ),
+                        Text("I'm Shanu",
+                          style: TextStyle(
+                            fontSize: 40,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                      ),
 ```
 
 ---
