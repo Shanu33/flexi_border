@@ -4,12 +4,6 @@ import 'border_mode.dart';
 
 /// FlexiBorder allows drawing dotted or solid lines on any subset of the four sides.
 /// Supports per-side offset and segment control using [BorderMode].
-class FlexiBorder extends Stimport 'package:flutter/material.dart';
-import 'package:dotted_border/dotted_border.dart';
-import 'border_mode.dart';
-
-/// FlexiBorder allows drawing dotted or solid lines on any subset of the four sides.
-/// Supports per-side offset and segment control using [BorderMode].
 class FlexiBorder extends StatelessWidget {
   final Widget child;
   final Color borderColor;
