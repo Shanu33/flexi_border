@@ -15,7 +15,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flexi_border: ^0.0.3
+  flexi_border: ^0.0.4
 ```
 
 Then:
@@ -53,7 +53,7 @@ FlexiBorder(
     height: 90,
     color: Colors.black,
     alignment: Alignment.center,
-   child: Row(
+    child: Row(
       children: [
         Text(
           "👋 I'm Shanu",
@@ -82,7 +82,7 @@ FlexiBorder(
     height: 90,
     color: Colors.black,
     alignment: Alignment.center,
-   child: Row(
+    child: Row(
       children: [
         Text(
           "👋 I'm Shanu",
@@ -188,7 +188,7 @@ import 'package:flexi_border/flexi_border.dart';
 
 ## ✅ Contributing
 
-PRs welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/yourusername/flexi_border).
+PRs welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/Shanu33/flexi_border).
 
 ---
 
