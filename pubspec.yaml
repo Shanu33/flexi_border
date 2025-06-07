@@ -1,6 +1,6 @@
 
 name: flexi_border
-description:description: >-
+description:>
   FlexiBorder is a Flutter widget that draws fully customizable
   per-side borders—solid or dashed—with half/full lengths, per-side
   offsets.
