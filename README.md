@@ -15,7 +15,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flexi_border: ^0.0.2
+  flexi_border: ^0.0.3
 ```
 
 Then:
@@ -36,7 +36,7 @@ import 'package:flexi_border/flexi_border.dart';
 
 ### Flutter Examples
 
-#### 1️⃣ Solid Thick Border
+#### 1️⃣ Corner Border
 
 ```dart
 FlexiBorder(
@@ -53,15 +53,19 @@ FlexiBorder(
     height: 90,
     color: Colors.black,
     alignment: Alignment.center,
-    child: Text(
-      "Solid Thick Border",
-      style: TextStyle(color: Colors.white),
+   child: Row(
+      children: [
+        Text(
+          "👋 I'm Shanu",
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
+      ],
     ),
   ),
 )
 ```
 
-#### 2️⃣ Evenly Dashed Medium Border
+#### 2️⃣ Evenly Dashed Border
 
 ```dart
 FlexiBorder(
@@ -78,15 +82,19 @@ FlexiBorder(
     height: 90,
     color: Colors.black,
     alignment: Alignment.center,
-    child: Text(
-      "Dashed Medium Border",
-      style: TextStyle(color: Colors.white),
+   child: Row(
+      children: [
+        Text(
+          "👋 I'm Shanu",
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
+      ],
     ),
   ),
 )
 ```
 
-#### 3️⃣ Mixed‐Style Custom Side
+#### 3️⃣ Half Rectangle Side
 
 ```dart
 FlexiBorder(
@@ -119,19 +127,19 @@ FlexiBorder(
 
 ## 🌐 Live Preview
 
-### 1️⃣ Solid Thick Border
+### 1️⃣ Corner Border
 
 ![Solid Thick Border](example/screenshots/corner.png)
 
 ---
 
-### 2️⃣ Evenly Dashed Medium Border
+### 2️⃣ Evenly Dashed Border
 
 ![Dashed Medium Border](example/screenshots/dashed.png)
 
 ---
 
-### 3️⃣ Mixed-Style Custom Side
+### 3️⃣ Half Rectangle Side
 
 ![Mixed-Style Border](example/screenshots/halfrect.png)
 

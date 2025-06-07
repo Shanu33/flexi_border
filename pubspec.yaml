@@ -4,7 +4,7 @@ description: >
   per-side borders—solid or dashed—with half/full lengths and per-side
   offsets.
 
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/shanu33/flexi_border
 repository: https://github.com/shanu33/flexi_border.git
 
