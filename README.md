@@ -240,16 +240,18 @@ import 'package:flexi_border/flexi_border.dart';
 PRs welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/Shanu33/flexi_border).
 
 ---
+
+## 📜 License
+
+MIT © 2025 Shanu33
+
+---
+
 ## ☕ Support Me
 
 If you find my work useful, consider supporting me:
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/shahnawazsx)
-
-
-## 📜 License
-
-MIT © 2025 Shanu33
 
 ```
 ```
