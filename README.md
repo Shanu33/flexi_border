@@ -174,7 +174,7 @@ FlexiBorder(
 
 ---
 
-## 🌐 Live Preview
+## 🌐 Preview
 
 ### 1️⃣ Corner Border
 
