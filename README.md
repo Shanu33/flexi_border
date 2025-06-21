@@ -15,7 +15,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flexi_border: ^0.0.5
+  flexi_border: ^0.0.6
 ```
 
 Then:
